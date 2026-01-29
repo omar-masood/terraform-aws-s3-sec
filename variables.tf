@@ -9,6 +9,12 @@ variable "enable_versioning" {
   default     = true
 }
 
+variable "enable_mfa_delete" {
+  description = "Enable MFA delete for S3 bucket versioning"
+  type        = bool
+  default     = false
+}
+
 variable "enable_lifecycle_rules" {
   description = "Enable lifecycle rules for noncurrent object versions"
   type        = bool
